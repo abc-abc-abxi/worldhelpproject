@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="对任务发布者评价"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"/>
+    <!--星评控件-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/txt"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/stars"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="星评"
+            android:textSize="20sp" />
+
+        <RatingBar
+            android:id="@+id/ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/stars"
+            android:stepSize="1"
+            android:rating="5"
+            />
+    </RelativeLayout>
+    <!--简评-->
+    <EditText
+        android:id="@+id/etxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="5"
+        android:gravity="top"
+        android:hint="请进行简评，有利于优化使用体验哦..."
+        android:layout_below="@id/txt"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="16sp"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:background="#FFFFFF"
+        />
+    <!--提交 按钮-->
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etxt"
+        android:layout_centerInParent="@id/txt"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/shape1"
+        android:textColor="@drawable/shape2"
+        android:text="提交"
+        ></Button>
+
+</RelativeLayout>

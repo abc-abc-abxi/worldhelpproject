@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.surface_x">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity016"></activity>
+        <activity android:name=".Activity015" />
+        <activity android:name=".Activity014" />
+        <activity android:name=".Activity013" />
+        <activity android:name=".Activity012" />
+        <activity android:name=".Activity011" />
+        <activity android:name=".Activity010" />
+        <activity android:name=".Activity009" />
+        <activity android:name=".Activity008" />
+        <activity android:name=".Activity007" />
+        <activity android:name=".Activity018" />
+        <activity android:name=".Activity22" />
+        <activity android:name=".Activity21" />
+        <activity android:name=".Activity20" />
+        <activity android:name=".Activity019" />
+        <activity android:name=".Activity017" />
+        <activity android:name=".Activity006" />
+        <activity android:name=".Activity005" />
+        <activity android:name=".Activity004" />
+        <activity android:name=".Activity003" />
+        <activity android:name=".Activity002" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

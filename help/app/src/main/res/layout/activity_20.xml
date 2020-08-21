@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity20">
+
+    <TextView
+        android:id="@+id/titleText_20_01"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="修改个人资料"
+        android:textSize="30dp" />
+    />
+    <LinearLayout
+        android:id="@+id/liLay020_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/titleText_20_01"
+        android:background="#DBDBDB">
+
+        <ImageView
+
+            android:id="@+id/img_Personal"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pic"
+            android:padding="8dp"
+            />
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp">
+            <Button
+                android:id="@+id/btn_name_20"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_next"
+                android:text="Tiam"
+                android:textSize="20sp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liLay020_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/liLay020_1"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+       >
+
+        <TextView
+            android:id="@+id/textView_20_1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="性别:"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/buttonSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男/女"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:background="@drawable/btn_next"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liLay020_02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/liLay020_01"
+        android:layout_margin="10dp">
+        <TextView
+            android:id="@+id/textView_19_2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="出生年月:"
+            android:textSize="14sp"
+            android:padding="10dp"/>
+        <Button
+            android:id="@+id/btnBornDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*年*月*日"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:background="@drawable/btn_next"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liLay020_03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/liLay020_02"
+        android:layout_margin="10dp">
+        <TextView
+            android:id="@+id/textView_20_3"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="身份证号码:"
+            android:textSize="14sp"
+            android:padding="10dp"/>
+        <Button
+            android:id="@+id/btnIdNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="430***************"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:background="@drawable/btn_next"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/liLay020_04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/liLay020_03"
+        android:layout_margin="10dp">
+        <TextView
+            android:id="@+id/tureName"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="真实姓名:"
+            android:textSize="14sp"
+            android:padding="10dp"/>
+        <Button
+            android:id="@+id/btnTureName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="王大川"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:background="@drawable/btn_next"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liLay020_05"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/liLay020_04"
+        android:layout_marginTop="50dp"
+        android:gravity="center">
+        <Button
+            android:id="@+id/dtMine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:background="@drawable/btn_01"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

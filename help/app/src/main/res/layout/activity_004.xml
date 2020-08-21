@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity004">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/inputPassword"
+            android:layout_width="375dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/input_bgd"
+            android:hint="新密码"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/reInput"
+            android:layout_width="375dp"
+            android:layout_height="59dp"
+            android:layout_below="@id/inputPassword"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/input_bgd"
+            android:hint="请确认密码"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center"
+            android:layout_below="@id/reInput">
+        <Button
+            android:id="@+id/setupComplete"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_01"
+            android:text="完成"
+            android:textSize="20dp"
+            android:gravity="center"
+            />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

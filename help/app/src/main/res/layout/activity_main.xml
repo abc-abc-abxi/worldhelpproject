@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/id01"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:background="#FAFAFA"
+        android:gravity="center">
+        <!--命名这个LinearLayout布局为 id01 -->
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:text="WELCOME!"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            />
+        <!--置顶的textview 中间文字为 WELCOME-->
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/id02"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <!--命名这个LinearLayout布局为 id02-->
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/input_bgd"
+            android:hint=" 账号："
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textStyle="italic"
+            android:textSize="14sp"
+            android:maxLines="1"
+            />
+        <!--设置的账号输入文字编辑器-->
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/input_bgd"
+            android:hint=" 密码："
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:inputType="textPassword"
+            android:textSize="14sp"
+            android:layout_marginTop="30dp"
+            android:textStyle="italic"
+            android:maxLines="1"/>
+        <!--设置的密码输入文字编辑器-->
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/id03"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <!--这个linearlayout 布局 命名为 id03-->
+        <Button
+            android:id="@+id/btn_01"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btn_01"
+            android:text="登录"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"
+
+              />
+        <!--设置的 登录按钮 -->
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/id04"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <!--linearlayout布局命名为id04 -->
+        <Button
+        android:id="@+id/btn_03"
+        android:layout_weight="1"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text="忘记密码"
+        android:background="#FAFAFA"
+        android:textSize="14sp"
+        />
+        <!--设置的 忘记密码按钮 -->
+        <Button
+            android:id="@+id/btn_04"
+            android:layout_weight="1"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:text="新用户注册"
+            android:textSize="14sp"
+            android:background="#FAFAFA"
+            />
+        <!--设置的 新用户注册按钮 -->
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
