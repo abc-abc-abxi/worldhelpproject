@@ -25,6 +25,7 @@
         <activity android:name=".Activity20" />
         <activity android:name=".Activity019" />
         <activity android:name=".Activity017" />
+        <activity android:name=".Activity006" />
         <activity android:name=".Activity005" />
         <activity android:name=".Activity004" />
         <activity android:name=".Activity003" />

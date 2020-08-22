@@ -58,8 +58,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //点击新用户注册按钮 跳转到页面  新用户注册
-//                Intent intent = new Intent(MainActivity.this, Activity006.class);
-//                startActivity(intent);
+                Intent intent = new Intent(MainActivity.this, Activity006.class);
+                startActivity(intent);
             }
         });
         mBtLogin.setOnClickListener(new View.OnClickListener() {
@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Log.d("----------------------:","上面这句有问题,我感觉是配置出问题了");
 
-            conn = DriverManager.getConnection("jdbc:mysql://223.104.227.132:3306/db1?serverTimezone=GMT%2B8","root","guolongkai@123");
+            conn = DriverManager.getConnection("jdbc:mysql://192.168.43.125:3306/db1?serverTimezone=GMT%2B8","root","guolongkai@123");
             String sql = "select * from userhelp where id = ? and password = ? ";
             pstate = conn.prepareStatement(sql);//执行sql语句的对象
             //问号填写
