@@ -158,18 +158,18 @@
             android:textSize="14sp"
             android:textStyle="italic"
             android:gravity="center"/>
+
         <Button
             android:id="@+id/getPicProve"
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:text="图片验证码"
-            android:textSize="20dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="14sp"
             android:background="@drawable/btn_01"
-            android:layout_marginLeft="10dp"
             android:paddingLeft="5dp"
             android:paddingRight="7dp"
-            />
+            android:text="图片验证码"
+            android:textSize="20dp" />
     </LinearLayout>
 
         <LinearLayout
