@@ -12,6 +12,7 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+
     //由于手动导入了依赖,会有重复的包
     packagingOptions {
         exclude 'META-INF/spring.tooling'

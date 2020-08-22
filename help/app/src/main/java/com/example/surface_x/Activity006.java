@@ -90,7 +90,7 @@ public class Activity006 extends AppCompatActivity {
             String sql = "select * from userhelp where id = ?";
             Map<String, Object> map = temp.queryForMap(sql,i);
 
-            if (map!=null) {//查询数据库中有没有相同的手机号,没有就放入数据库中
+            if (map==null) {//查询数据库中有没有相同的手机号,没有就放入数据库中
                 informat.setId(i);//手机号放入封装类
             }else {
                 Toast.makeText(Activity006.this,"已存在此手机号,请登录",Toast.LENGTH_SHORT).show();
@@ -119,6 +119,7 @@ public class Activity006 extends AppCompatActivity {
 
     //将设置好的封装类加入数据库表中
     public int InsertUser(){
+
         String sql = "insert  into stu (id,name,sex,date,password) values (?,?,?,?,?)";
         int update = temp.update(sql, informat.getId(), informat.getUsername(), informat.getSex(), informat.getDate(), informat.getPassword());
         return update;//返回执行条数

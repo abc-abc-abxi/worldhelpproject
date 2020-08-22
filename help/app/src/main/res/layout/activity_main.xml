@@ -37,6 +37,7 @@
         android:gravity="center">
         <!--命名这个LinearLayout布局为 id02-->
         <EditText
+            android:id="@+id/id000"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:background="@drawable/input_bgd"
@@ -49,6 +50,7 @@
             />
         <!--设置的账号输入文字编辑器-->
         <EditText
+            android:id="@+id/password"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:background="@drawable/input_bgd"
